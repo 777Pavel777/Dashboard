@@ -71,16 +71,15 @@
   background-color: #5932ea;
 }
 
-.nav__item:hover > .nav__link,
-.nav__icon {
+.nav__item:hover .nav__link,
+.nav__item:hover .nav__icon {
   color: #fff;
   fill: #fff;
   stroke: #fff;
 }
 
 .nav__icon {
-  fill: #fff;
-  stroke: #fff;
+  /* fill: #fff; */
   margin-right: 14px;
 }
 
@@ -95,7 +94,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  /* margin-bottom: 52px; */
 }
 
 .user__foto {
@@ -106,6 +104,14 @@
 .user__profeshion {
   font-size: 12px;
   color: #757575;
+}
+
+.active__menu {
+  background-color: #5932ea;
+}
+
+.nav__item.active__menu .nav__link {
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -139,6 +145,13 @@
 }
 
 @media (min-width: 1280px) {
+  .nav__item:hover .nav__link,
+  .nav__item:hover .nav__icon {
+    color: #fff;
+    /* fill: #fff; */
+    stroke: #fff;
+  }
+
   .header {
     padding: 36px 0 0 28px;
   }

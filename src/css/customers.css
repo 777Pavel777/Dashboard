@@ -107,7 +107,33 @@
   display: flex;
   gap: 5px;
   padding: 10px;
-  justify-content: end;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  width: 25px;
+  height: 24px;
+  margin: 0 2px;
+  border: none;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #5932ea;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #d3d3d3;
+  cursor: default;
+}
+
+.pagination .dots {
+  padding: 5px;
+  margin: 0 2px;
+  color: #000000;
 }
 
 .pagination button {
@@ -183,6 +209,10 @@
   .content__search {
     height: 32px;
     margin-top: 14px;
+  }
+
+  .pagination {
+    justify-content: end;
   }
 }
 
