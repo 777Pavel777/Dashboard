@@ -37,7 +37,7 @@ function renderPagination() {
   const prevButton = document.createElement('button');
   prevButton.innerHTML = `
           <svg class="prev__arrow" width="14" height="14">
-          <use href="./img/svg/symbol-defs.svg#icon-arrow"></use>
+          <use href="./img/svg/symbol-defs.svg#icon-close"></use>
           </svg>`;
   prevButton.disabled = currentPage === 1;
   prevButton.onclick = () => goToPage(currentPage - 1);
