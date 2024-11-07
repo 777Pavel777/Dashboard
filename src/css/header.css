@@ -145,13 +145,6 @@
 }
 
 @media (min-width: 1280px) {
-  .nav__item:hover .nav__link,
-  .nav__item:hover .nav__icon {
-    color: #fff;
-    /* fill: #fff; */
-    stroke: #fff;
-  }
-
   .header {
     padding: 36px 0 0 28px;
   }

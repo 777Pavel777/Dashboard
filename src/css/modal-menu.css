@@ -1,0 +1,61 @@
+.backdrop {
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #fafafa;
+
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  visibility: hidden;
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open-menu {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.modal__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 10px 0 0;
+  margin-bottom: 52px;
+}
+
+.modal__logo {
+  font-size: 28px;
+}
+
+.modal__btn-close {
+  background-color: transparent;
+  fill: #000;
+  border: none;
+}
+
+.modal__links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 34px 20px;
+  gap: 36px;
+  overflow-y: auto;
+}
+
+.modal__link-item {
+  color: #000;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

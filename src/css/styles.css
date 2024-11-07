@@ -2,6 +2,7 @@
 @import url('./header.css');
 @import url('./customers.css');
 @import url('./hiden-veriables.css');
+@import url('./modal-menu.css');
 
 :root {
   font-family: 'Poppins', Inter, sans-serif;
