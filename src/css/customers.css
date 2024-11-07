@@ -112,6 +112,9 @@
 }
 
 .pagination button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25px;
   height: 24px;
   margin: 0 2px;
@@ -216,6 +219,7 @@
   }
 
   .pagination {
+    align-items: center;
     justify-content: end;
   }
 }

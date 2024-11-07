@@ -36,7 +36,7 @@ function renderPagination() {
 
   const prevButton = document.createElement('button');
   prevButton.innerHTML = `
-          <svg class="prev__arrow" width="14" height="14">
+          <svg class="prev__arrow" width="14" height="14" viewBox="0 0 32 32">
           <path d="M12 22.667h2.667l6.667-6.667-6.667-6.667h-2.667l6.667 6.667-6.667 6.667z"></path>
           </svg>`;
   prevButton.disabled = currentPage === 1;
@@ -67,7 +67,7 @@ function renderPagination() {
 
   const nextButton = document.createElement('button');
   nextButton.innerHTML = `
-          <svg class="next__arrow" width="14" height="14">
+          <svg class="next__arrow" width="14" height="14" viewBox="0 0 32 32">
           <path d="M12 22.667h2.667l6.667-6.667-6.667-6.667h-2.667l6.667 6.667-6.667 6.667z"></path>
           </svg>`;
   nextButton.disabled = currentPage === totalPages;
