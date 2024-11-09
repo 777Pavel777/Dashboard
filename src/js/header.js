@@ -11,8 +11,8 @@ function toggleMenu() {
 }
 
 function toggleContent() {
-  const mobileMenu = document.querySelector('.header__mobile');
-  const desctopMenu = document.querySelector('.header__nav');
+  const mobileMenu = document.querySelector('.aside__mobile');
+  const desctopMenu = document.querySelector('.aside__nav');
   const userInfo = document.querySelector('.user');
 
   if (window.innerWidth < 768) {
