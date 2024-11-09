@@ -71,16 +71,25 @@
   background-color: #5932ea;
 }
 
-.nav__item:hover .nav__link,
-.nav__item:hover .nav__icon {
+.nav__item:hover .nav__link {
   color: #fff;
-  fill: #fff;
-  stroke: #fff;
 }
 
 .nav__icon {
-  /* fill: #fff; */
+  fill: #9197b3;
+  stroke: #9197b3;
   margin-right: 14px;
+}
+
+.nav__arrow {
+  stroke: #9197b3;
+  transition: fill 0.3s ease-in-out;
+}
+
+.nav__item:hover .nav__icon,
+.nav__item:hover .nav__arrow {
+  stroke: #fff;
+  fill: #fff;
 }
 
 .nav__link {
@@ -107,11 +116,16 @@
 }
 
 .active__menu {
+  stroke: #fff;
   background-color: #5932ea;
 }
 
-.nav__item.active__menu .nav__link {
+.active__menu .nav__link,
+.active__menu .nav__arrow,
+.active__menu .nav__icon {
   color: #fff;
+  stroke: #fff;
+  fill: #fff;
 }
 
 @media (min-width: 768px) {
